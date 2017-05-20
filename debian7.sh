@@ -27,19 +27,6 @@ fi
 # go to root
 cd
 
-# check registered ip
-wget -q -O IP $source/IP.txt
-if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
-	if [[ $vps = "zvur" ]]; then
-		echo "Hubungi: Yuri Bhuana (fb.com/youree82 atau 0858 1500 2021)"
-	else
-		echo "Hubungi: Turut Dwi Hariyanto (fb.com/turut.dwi.hariyanto atau 085735313729)"
-	fi
-	rm -f /root/IP
-	exit
-fi
-
 # disable ipv6
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
@@ -60,7 +47,8 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
 
 # set repo
-wget -O /etc/apt/sources.list $source/Debian7/sources.list.debian7
+wget -O /etc/apt/
+s.list $source/Debian7/sources.list.debian7
 wget http://www.dotdeb.org/dotdeb.gpg
 wget http://www.webmin.com/jcameron-key.asc
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
