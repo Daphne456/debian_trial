@@ -281,7 +281,7 @@ fi
 # encrypted script
 #wget -O /usr/bin/autokill $source/Debian7/autokill.sh
 wget -O /usr/bin/dropmon $source/Debian7/dropmon.sh
-wget -O /usr/bin/menu $source/Debian7/menu.sh
+wget -O /usr/bin/menu https://raw.githubusercontent.com/r38865/VPS/master/menu.sh
 wget -O /usr/bin/user-active-list $source/Debian7/user-active-list.sh
 wget -O /usr/bin/user-add $source/Debian7/user-add.sh
 wget -O /usr/bin/user-add-pptp $source/Debian7/user-add-pptp.sh
