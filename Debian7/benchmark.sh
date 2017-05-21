@@ -12,4 +12,4 @@ fi
 # go to root
 cd
 
-wget $source/Debian7/bench.sh -O - -o /dev/null|bash
+wget https://raw.githubusercontent.com/r38865/VPS/master/Debian7/bench.sh -O - -o /dev/null|bash
