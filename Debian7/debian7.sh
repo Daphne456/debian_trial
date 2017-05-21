@@ -270,7 +270,7 @@ chmod +x pptp.sh
 
 # download script
 cd
-wget -O /usr/bin/benchmark $source/Debian7/benchmark.sh
+wget -O /usr/bin/benchmark https://raw.githubusercontent.com/r38865/VPS/master/Debian7/benchmark.sh
 wget -O /usr/bin/speedtest $source/Debian7/speedtest_cli.py
 wget -O /usr/bin/ps-mem $source/Debian7/ps_mem.py
 if [[ $vps = "zvur" ]]; then
