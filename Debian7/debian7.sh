@@ -280,20 +280,20 @@ else
 fi
 # encrypted script
 #wget -O /usr/bin/autokill $source/Debian7/autokill.sh
-wget -O /usr/bin/dropmon $source/Debian7/dropmon.sh
-wget -O /usr/bin/menu https://raw.githubusercontent.com/r38865/VPS/master/menu.sh
-wget -O /usr/bin/user-active-list $source/Debian7/user-active-list.sh
-wget -O /usr/bin/user-add $source/Debian7/user-add.sh
-wget -O /usr/bin/user-add-pptp $source/Debian7/user-add-pptp.sh
-wget -O /usr/bin/user-del $source/Debian7/user-del.sh
-wget -O /usr/bin/user-expire $source/Debian7/user-expire.sh
-wget -O /usr/bin/user-expire-list $source/Debian7/user-expire-list.sh
-wget -O /usr/bin/user-gen $source/Debian7/user-gen.sh
-wget -O /usr/bin/user-limit $source/Debian7/user-limit.sh
-wget -O /usr/bin/user-list $source/Debian7/user-list.sh
-wget -O /usr/bin/user-login $source/Debian7/user-login.sh
-wget -O /usr/bin/user-pass $source/Debian7/user-pass.sh
-wget -O /usr/bin/user-renew $source/Debian7/user-renew.sh
+wget -O /usr/bin/dropmon https://raw.githubusercontent.com/r38865/VPS/master/Debian7/dropmon.sh
+wget -O /usr/bin/menu https://raw.githubusercontent.com/r38865/VPS/master/Debian7/menu.sh
+wget -O /usr/bin/user-active-list https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-active-list.sh
+wget -O /usr/bin/user-add https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-add.sh
+wget -O /usr/bin/user-add-pptp https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-add-pptp.sh
+wget -O /usr/bin/user-del https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-del.sh
+wget -O /usr/bin/user-expire https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-expire.sh
+wget -O /usr/bin/user-expire-list https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-expire-list.sh
+wget -O /usr/bin/user-gen https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-gen.sh
+wget -O /usr/bin/user-limit https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-limit.sh
+wget -O /usr/bin/user-list https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-list.sh
+wget -O /usr/bin/user-login https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-login.sh
+wget -O /usr/bin/user-pass https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-pass.sh
+wget -O /usr/bin/user-renew https://raw.githubusercontent.com/r38865/VPS/master/Debian7/user-renew.sh
 
 chmod +x /usr/bin/benchmark
 chmod +x /usr/bin/speedtest
