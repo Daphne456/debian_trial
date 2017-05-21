@@ -264,7 +264,7 @@ service webmin restart
 service vnstat restart
 
 # install pptp vpn
-wget $source/Debian7/pptp.sh
+wget https://raw.githubusercontent.com/r38865/VPS/master/Debian7/pptp.sh
 chmod +x pptp.sh
 ./pptp.sh
 
