@@ -279,9 +279,9 @@ service webmin restart
 service vnstat restart
 
 # install pptp vpn
-wget $source/pptp
-chmod +x pptp
-./pptp
+wget $source/pptp.sh
+chmod +x pptp.sh
+./pptp.sh
 
 # download script
 cd
@@ -294,25 +294,25 @@ else
 	wget -O /etc/issue.net $source/bannerA
 fi
 # encrypted script
-wget -O /usr/bin/autokill $source/autokill
-wget -O /usr/bin/dropmon $source/dropmon
-wget -O /usr/bin/menu $source/menu
-wget -O /usr/bin/user-active-list $source/user-active-list
-wget -O /usr/bin/user-add $source/user-add
-wget -O /usr/bin/user-add-pptp $source/user-add-pptp
-wget -O /usr/bin/user-del $source/user-del
-wget -O /usr/bin/disable-user-expire $source/disable-user-expire
-wget -O /usr/bin/delete-user-expire $source/delete-user-expire
-wget -O /usr/bin/banned-user $source/banned-user
-wget -O /usr/bin/banner $source/banner
-wget -O /usr/bin/user-expire-list $source/user-expire-list
-wget -O /usr/bin/user-gen $source/user-gen
-wget -O /usr/bin/user-limit $source/user-limit
-wget -O /usr/bin/user-list $source/user-list
-wget -O /usr/bin/user-login $source/user-login
-wget -O /usr/bin/user-pass $source/user-pass
-wget -O /usr/bin/user-renew $source/user-renew
-wget -O /usr/bin/update $source/update
+wget -O /usr/bin/autokill $source/autokill.sh
+wget -O /usr/bin/dropmon $source/dropmon.sh
+wget -O /usr/bin/menu $source/menu.sh
+wget -O /usr/bin/user-active-list $source/user-active-list.sh
+wget -O /usr/bin/user-add $source/user-add.sh
+wget -O /usr/bin/user-add-pptp $source/user-add-pptp.sh
+wget -O /usr/bin/user-del $source/user-del.sh
+wget -O /usr/bin/disable-user-expire $source/disable-user-expire.sh
+wget -O /usr/bin/delete-user-expire $source/delete-user-expire.sh
+wget -O /usr/bin/banned-user $source/banned-user.sh
+wget -O /usr/bin/banner $source/banner.sh
+wget -O /usr/bin/user-expire-list $source/user-expire-list.sh
+wget -O /usr/bin/user-gen $source/user-gen.sh
+wget -O /usr/bin/user-limit $source/user-limit.sh
+wget -O /usr/bin/user-list $source/user-list.sh
+wget -O /usr/bin/user-login $source/user-login.sh
+wget -O /usr/bin/user-pass $source/user-pass.sh
+wget -O /usr/bin/user-renew $source/user-renew.sh
+wget -O /usr/bin/update $source/update.sh
 
 chmod +x /usr/bin/benchmark
 chmod +x /usr/bin/speedtest
