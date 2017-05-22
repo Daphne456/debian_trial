@@ -32,7 +32,7 @@ if ! grep -w -q $MYIP IP; then
 	exit
 fi
 
-echo "------------------------------- MEMBUAT AKUN SSH -------------------------------"
+echo "------------------------------- MEMBUAT AKAUN SSH/OPENVPN -------------------------------"
 
 if [[ $vps = "zvur" ]]; then
 	echo "                     ALL SUPPORTED BY ZONA VPS UNTUK RAKYAT                     "
@@ -52,8 +52,8 @@ if [ $? -eq 0 ]; then
 	echo "Username [$username] sudah ada!"
 	exit 1
 else
-	read -p "Isikan password akun [$username]: " password
-	read -p "Berapa hari akun [$username] aktif: " AKTIF
+	read -p "Isikan password akaun [$username]: " password
+	read -p "Berapa hari akaun [$username] aktif: " AKTIF
 
 	today="$(date +"%Y-%m-%d")"
 	expire=$(date -d "$AKTIF days" +"%Y-%m-%d")
