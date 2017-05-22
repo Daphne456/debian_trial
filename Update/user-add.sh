@@ -32,7 +32,7 @@ if ! grep -w -q $MYIP IP; then
 	exit
 fi
 
-echo "------------------------------- MEMBUAT AKAUN SSH/OPENVPN -------------------------------"
+echo "--------------------------- MEMBUAT AKAUN SSH/OPENVPN ---------------------------"
 
 if [[ $vps = "zvur" ]]; then
 	echo "                     ALL SUPPORTED BY ZONA VPS UNTUK RAKYAT                     "
