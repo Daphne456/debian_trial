@@ -7,8 +7,8 @@ fi
 
 MYIP=$(wget -qO- ipv4.icanhazip.com)
 
-vps="zvur";
-#vps="aneka";
+#vps="zvur";
+vps="aneka";
 
 if [[ $vps = "zvur" ]]; then
 	source="http://scripts.gapaiasa.com"
