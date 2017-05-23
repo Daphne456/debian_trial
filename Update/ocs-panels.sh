@@ -118,7 +118,7 @@ service nginx restart
 apt-get install -y git
 cd /home/vps/public_html
 git init
-git remote add origin https://github.com/youree82/OcsPanels.git
+git remote add origin https://github.com/r38865/OCSPi.git
 git pull origin master
 
 #mysql -u root -p
