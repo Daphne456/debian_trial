@@ -41,11 +41,11 @@ vps="aneka";
 if [[ $vps = "zvur" ]]; then
 	source="http://scripts.gapaiasa.com"
 else
-	source="http://anekascript.anekavps.us"
+	source="https://raw.githubusercontent.com/r38865/VPS/master/Update"
 fi
 
 geteasyrsa () {
-	wget --no-check-certificate -O ~/easy-rsa.tar.gz $source/OpenVPN/easy-rsa-2.2.2.tar.gz
+	wget --no-check-certificate -O ~/easy-rsa.tar.gz $source/easy-rsa-2.2.2.tar.gz
 	tar xzf ~/easy-rsa.tar.gz -C ~/
 	mkdir -p /etc/openvpn/easy-rsa/2.0/
 	cp ~/easy-rsa-2.2.2/easy-rsa/2.0/* /etc/openvpn/easy-rsa/2.0/
