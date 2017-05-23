@@ -23,7 +23,7 @@ vps="aneka";
 if [[ $vps = "zvur" ]]; then
 	source="http://scripts.gapaiasa.com"
 else
-	source="http://anekascript.anekavps.us"
+	source="https://raw.githubusercontent.com/r38865/VPS/master/Update"
 fi
 
 # go to root
@@ -32,7 +32,7 @@ cd
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 
 # check registered ip
-wget -q -O "IP" "$source/OCSPanels/IP.txt"
+wget -q -O "IP" "$source/OCSP/IP.txt"
 if ! grep -w -q $MYIP IP; then
 	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
 	echo "Hubungi: Yuri Bhuana (fb.com/youree82 atau 0858 1500 2021)"
@@ -102,8 +102,8 @@ apt-get install -y nginx php5 php5-fpm php5-cli php5-mysql php5-mcrypt
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.old
-curl $source/OCSPanels/nginx.conf > /etc/nginx/nginx.conf
-curl $source/OCSPanels/vps.conf > /etc/nginx/conf.d/vps.conf
+curl $source/OCSP/nginx.conf > /etc/nginx/nginx.conf
+curl $source/OCSP/vps.conf > /etc/nginx/conf.d/vps.conf
 sed -i 's/cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php5/fpm/php.ini
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
 
