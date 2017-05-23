@@ -13,7 +13,7 @@ vps="aneka";
 if [[ $vps = "zvur" ]]; then
 	source="http://scripts.gapaiasa.com"
 else
-	source="http://anekascript.anekavps.us"
+	source="https://raw.githubusercontent.com/r38865/VPS/master/Update"
 fi
 
 # go to root
@@ -32,7 +32,7 @@ if ! grep -w -q $MYIP IP; then
 	exit
 fi
 
-echo "------------------------------- BANNED AKUN SSH --------------------------------"
+echo "------------------------------- BANNED AKAUN SSH -------------------------------"
 
 if [[ $vps = "zvur" ]]; then
 	echo "                     ALL SUPPORTED BY ZONA VPS UNTUK RAKYAT                     "
@@ -68,15 +68,15 @@ read -p "Isikan username: " username
 egrep "^$username" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
 	echo ""
-	read -p "Apakah Anda benar-benar ingin mem-banned akun [$username] [y/n]: " -e -i y BANNED
+	read -p "Apakah Anda benar-benar ingin mem-banned akaun [$username] [y/n]: " -e -i y BANNED
 	if [[ "$BANNED" = 'y' ]]; then
 		echo " User : $username" >> /root/banneduser.txt
 		passwd -l $username
 		echo ""
-		echo "Akun [$username] berhasil dibanned!"
+		echo "Akaun [$username] berhasil dibanned!"
 	else
 		echo ""
-		echo "Banned akun [$username] dibatalkan!"
+		echo "Banned akaun [$username] dibatalkan!"
 	fi
 else
 	echo "Username [$username] belum terdaftar!"
