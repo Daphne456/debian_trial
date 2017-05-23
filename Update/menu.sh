@@ -215,7 +215,7 @@ do
 		;;
 		25)
 		clear
-		wget -O /usr/bin/update http://anekascript.anekavps.us/Debian7/update
+		wget -O /usr/bin/update https://raw.githubusercontent.com/r38865/VPS/master/Update/update.sh
 		chmod +x /usr/bin/update
 		update
 		exit
