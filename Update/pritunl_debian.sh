@@ -62,27 +62,18 @@ sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
 sed -i 's/#net.ipv6.conf.all.forwarding=1/net.ipv6.conf.all.forwarding=1/g' /etc/sysctl.conf
 sysctl -p
 clear
-echo "
-REMOVE SPAM PACKAGE
 
-echo "========================================"  | tee -a log-install.txt
-echo "Service Autoscript Created By Lee Dzung "  | tee -a log-install.txt
-echo "----------------------------------------"  | tee -a log-install.txt
-echo "Website : http://leedzung-autoscript.net/"  | tee -a log-install.txt
-echo "   Contact Number     : +60146463183     "  | tee -a log-install.txt
-echo "         Telegram : @LeeDzung            "  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Webmin   : http://$myip:10000/"
-echo "Squid3   : 8080, 3128"  | tee -a log-install.txt
-echo "OpenSSH  : 22, 143"  | tee -a log-install.txt
-echo "Dropbear : 109, 110, 443"  | tee -a log-install.txt
-echo "Download client at http://$myip:81/client.ovpn"  | tee -a log-install.txt
-echo "Timezone : Asia/Kuala_Lumpur"  | tee -a log-install.txt
-echo "Fail2Ban : [on]"   | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "----------------------------------------"
-echo "------Thank you for choice us--------"
-echo "========================================"  | tee -a log-install.txt
-echo "      PLEASE REBOOT TAKE EFFECT !"
-echo "========================================"  | tee -a log-install.txt
-"
+sudo tee -a /etc/apt/sources.list.d/mongodb-org-3.4.list << EOF
+deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.4 main
+EOF
+
+sudo tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+deb http://repo.pritunl.com/stable/apt wheezy main
+EOF
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 0C49F3730359A14518585931BC711F9BA15703C6
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+sudo apt-get update
+sudo apt-get --assume-yes install pritunl mongodb-org
+sudo service mongod start
+sudo service pritunl start
