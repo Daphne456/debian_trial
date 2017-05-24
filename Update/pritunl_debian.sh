@@ -85,4 +85,4 @@ echo "------Thank you for choice us--------"
 echo "========================================"  | tee -a log-install.txt
 echo "      PLEASE REBOOT TAKE EFFECT !"
 echo "========================================"  | tee -a log-install.txt
-cat /dev/null > ~/.bash_history && history -c
+"
