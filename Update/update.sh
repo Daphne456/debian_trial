@@ -20,33 +20,33 @@ if [[ $? != 0 ]];then
 	sed -i "1 a\iptables -A FORWARD -m string --algo kmp --string playstation -j REJECT" /etc/rc.local
 fi
 
-wget -O /usr/bin/autokill http://anekascript.anekavps.us/Debian7/autokill
-wget -O /usr/bin/banned-user http://anekascript.anekavps.us/Debian7/banned-user
-wget -O /usr/bin/banner http://anekascript.anekavps.us/Debian7/banner
-wget -O /usr/bin/delete-user-expire http://anekascript.anekavps.us/Debian7/delete-user-expire
-wget -O /usr/bin/disable-user-expire http://anekascript.anekavps.us/Debian7/disable-user-expire
-wget -O /usr/bin/dropmon http://anekascript.anekavps.us/Debian7/dropmon
-wget -O /usr/bin/menu http://anekascript.anekavps.us/Debian7/menu
-wget -O /usr/bin/unbanned-user http://anekascript.anekavps.us/Debian7/unbanned-user
-wget -O /usr/bin/user-active-list http://anekascript.anekavps.us/Debian7/user-active-list
-wget -O /usr/bin/user-add http://anekascript.anekavps.us/Debian7/user-add
-wget -O /usr/bin/user-add-pptp http://anekascript.anekavps.us/Debian7/user-add-pptp
-wget -O /usr/bin/user-del http://anekascript.anekavps.us/Debian7/user-del
-wget -O /usr/bin/user-expire-list http://anekascript.anekavps.us/Debian7/user-expire-list
-wget -O /usr/bin/user-gen http://anekascript.anekavps.us/Debian7/user-gen
-wget -O /usr/bin/user-limit http://anekascript.anekavps.us/Debian7/user-limit
-wget -O /usr/bin/user-list http://anekascript.anekavps.us/Debian7/user-list
-wget -O /usr/bin/user-login http://anekascript.anekavps.us/Debian7/user-login
-wget -O /usr/bin/user-pass http://anekascript.anekavps.us/Debian7/user-pass
-wget -O /usr/bin/user-renew http://anekascript.anekavps.us/Debian7/user-renew
-wget -O /usr/bin/edit-port http://anekascript.anekavps.us/Debian7/edit-port
-wget -O /usr/bin/edit-port-dropbear http://anekascript.anekavps.us/Debian7/edit-port-dropbear
-wget -O /usr/bin/edit-port-openssh http://anekascript.anekavps.us/Debian7/edit-port-openssh
-wget -O /usr/bin/edit-port-squid http://anekascript.anekavps.us/Debian7/edit-port-squid
-wget -O /usr/bin/edit-port-openvpn http://anekascript.anekavps.us/Debian7/edit-port-openvpn
-wget -O /usr/bin/benchmark http://anekascript.anekavps.us/Debian7/benchmark.sh
-wget -O /usr/bin/root-pass http://anekascript.anekavps.us/Debian7/root-pass
-wget -O /usr/bin/update http://anekascript.anekavps.us/Debian7/update
+wget -O /usr/bin/autokill https://raw.githubusercontent.com/r38865/VPS/master/Update/autokill.sh
+wget -O /usr/bin/banned-user https://raw.githubusercontent.com/r38865/VPS/master/Update/banned-user.sh
+wget -O /usr/bin/banner https://raw.githubusercontent.com/r38865/VPS/master/Update/banner.sh
+wget -O /usr/bin/delete-user-expire https://raw.githubusercontent.com/r38865/VPS/master/Update/delete-user-expire.sh
+wget -O /usr/bin/disable-user-expire https://raw.githubusercontent.com/r38865/VPS/master/Update/disable-user-expire.sh
+wget -O /usr/bin/dropmon https://raw.githubusercontent.com/r38865/VPS/master/Update/dropmon.sh
+wget -O /usr/bin/menu https://raw.githubusercontent.com/r38865/VPS/master/Update/menu.sh
+wget -O /usr/bin/unbanned-user https://raw.githubusercontent.com/r38865/VPS/master/Update/unbanned-user.sh
+wget -O /usr/bin/user-active-list https://raw.githubusercontent.com/r38865/VPS/master/Update/user-active-list.sh
+wget -O /usr/bin/user-add https://raw.githubusercontent.com/r38865/VPS/master/Update/user-add.sh
+wget -O /usr/bin/user-add-pptp https://raw.githubusercontent.com/r38865/VPS/master/Update/user-add-pptp.sh
+wget -O /usr/bin/user-del https://raw.githubusercontent.com/r38865/VPS/master/Update/user-del.sh
+wget -O /usr/bin/user-expire-list https://raw.githubusercontent.com/r38865/VPS/master/Update/user-expire-list.sh
+wget -O /usr/bin/user-gen https://raw.githubusercontent.com/r38865/VPS/master/Update/user-gen.sh
+wget -O /usr/bin/user-limit https://raw.githubusercontent.com/r38865/VPS/master/Update/user-limit.sh
+wget -O /usr/bin/user-list https://raw.githubusercontent.com/r38865/VPS/master/Update/user-list.sh
+wget -O /usr/bin/user-login https://raw.githubusercontent.com/r38865/VPS/master/Update/user-login.sh
+wget -O /usr/bin/user-pass https://raw.githubusercontent.com/r38865/VPS/master/Update/user-pass.sh
+wget -O /usr/bin/user-renew https://raw.githubusercontent.com/r38865/VPS/master/Update/user-renew.sh
+wget -O /usr/bin/edit-port https://raw.githubusercontent.com/r38865/VPS/master/Update/edit-port.sh
+wget -O /usr/bin/edit-port-dropbear https://raw.githubusercontent.com/r38865/VPS/master/Update/edit-port-dropbear.sh
+wget -O /usr/bin/edit-port-openssh https://raw.githubusercontent.com/r38865/VPS/master/Update/edit-port-openssh.sh
+wget -O /usr/bin/edit-port-squid https://raw.githubusercontent.com/r38865/VPS/master/Update/edit-port-squid.sh
+wget -O /usr/bin/edit-port-openvpn https://raw.githubusercontent.com/r38865/VPS/master/Update/edit-port-openvpn.sh
+wget -O /usr/bin/benchmark https://raw.githubusercontent.com/r38865/VPS/master/Update/benchmark.sh
+wget -O /usr/bin/root-pass https://raw.githubusercontent.com/r38865/VPS/master/Update/root-pass.sh
+wget -O /usr/bin/update https://raw.githubusercontent.com/r38865/VPS/master/Update/update.sh
 
 chmod +x /usr/bin/autokill
 chmod +x /usr/bin/banned-user
