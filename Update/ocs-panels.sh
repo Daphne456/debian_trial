@@ -23,7 +23,7 @@ vps="aneka";
 if [[ $vps = "zvur" ]]; then
 	source="http://scripts.gapaiasa.com"
 else
-	source="https://raw.githubusercontent.com/r38865/VPS/master/Update"
+	source="https://raw.githubusercontent.com/Daphne456/debian_trial/master/update"
 fi
 
 # go to root
@@ -35,7 +35,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 wget -q -O "IP" "$source/OCSP/IP.txt"
 if ! grep -w -q $MYIP IP; then
 	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
-	echo "Hubungi: Yuri Bhuana (fb.com/youree82 atau 0858 1500 2021)"
+	echo "Hubungi: Yujin Krabs (fb.com/jordhia atau 0877 7547 4442)"
 	rm -f /root/IP
 	exit
 fi
