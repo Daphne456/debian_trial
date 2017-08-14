@@ -10,4 +10,4 @@ Usage
 
 INSTAL VPS DEBIAN 7 ( 32/64 ) KVM & OVZ
 
-https://raw.githubusercontent.com/Daphne456/debian_trial/master/Update/debian7.sh && chmod +x debian7.sh && ./debian7.sh
+wget -O debian7.sh https://raw.githubusercontent.com/Daphne456/debian_trial/master/Update/debian7.sh && chmod +x debian7.sh && ./debian7.sh
