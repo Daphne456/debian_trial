@@ -8,9 +8,9 @@ $line
 
 ################################################################################
 ##                                                                            ##
-##                         ALL SUPPORTED BY ANEKA VPS                         ##
-##                    https://www.facebook.com/aneka.vps.us                   ##
-##          DEVELOPED BY YURI BHUANA (fb.com/youree82, 085815002021)          ##
+##                         ALL SUPPORTED BY VOZOV VPS                         ##
+##                      https://www.facebook.com/jordhia                      ##
+##             DEVELOPED BY YUJIN KRABS (fb.com/jordhia, 08777547442)         ##
 ##                                                                            ##
 ################################################################################
 ##################  CLOSE BANNER INI AGAR ANDA BISA BROWSING  ##################
