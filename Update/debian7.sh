@@ -21,7 +21,7 @@ vps="aneka";
 if [[ $vps = "zvur" ]]; then
 	source="http://scripts.gapaiasa.com"
 else
-	source="https://raw.githubusercontent.com/r38865/VPS/master/Update"
+	source="https://raw.githubusercontent.com/Daphne456/debian_trial/master/"
 fi
 
 # go to root
@@ -32,9 +32,9 @@ wget -q -O IP $source/IP.txt
 if ! grep -w -q $MYIP IP; then
 	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
 	if [[ $vps = "zvur" ]]; then
-		echo "Hubungi: Yuri Bhuana (fb.com/youree82 atau 0858 1500 2021)"
+		echo "Hubungi: Yujin Krabs (fb.com/jordhia atau 0877 7547 4442)"
 	else
-		echo "Hubungi: Turut Dwi Hariyanto (fb.com/turut.dwi.hariyanto atau 085735313729)"
+		echo "Hubungi: Yujin Krabs (fb.com/jordhia atau 0877 7547 4442)"
 	fi
 	rm -f /root/IP
 	exit
@@ -425,10 +425,10 @@ echo "" | tee -a log-install.txt
 
 if [[ $vps = "zvur" ]]; then
 	echo "ALL SUPPORTED BY ZONA VPS UNTUK RAKYAT" | tee -a log-install.txt
-	echo "https://www.facebook.com/groups/Zona.VPS.Untuk.Rakyat/" | tee -a log-install.txt
+	echo "https://www.facebook.com/jordhia/" | tee -a log-install.txt
 else
 	echo "ALL SUPPORTED BY ANEKA VPS" | tee -a log-install.txt
-	echo "https://www.facebook.com/aneka.vps.us" | tee -a log-install.txt
+	echo "https://www.facebook.com/jordhia" | tee -a log-install.txt
 fi
 
 echo "DEVELOPED BY YURI BHUANA (fb.com/youree82, 085815002021)" | tee -a log-install.txt
