@@ -32,9 +32,9 @@ wget -q -O IP $source/IP.txt
 if ! grep -w -q $MYIP IP; then
 	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
 	if [[ $vps = "zvur" ]]; then
-		echo "Hubungi: Yujin Krabs (fb.com/youree82 atau 0877 7547 4442)"
+		echo "Hubungi: Yujin Krabs (fb.com/jordhia atau 0877 7547 4442)"
 	else
-		echo "Hubungi: Yujin Krabs (fb.com/youree82 atau 0877 7547 4442)"
+		echo "Hubungi: Yujin Krabs (fb.com/jordhia atau 0877 7547 4442)"
 	fi
 	rm -f /root/IP
 	exit
