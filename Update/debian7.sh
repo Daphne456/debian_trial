@@ -27,19 +27,6 @@ fi
 # go to root
 cd
 
-# check registered ip
-wget -q -O IP $source/IP.txt
-if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
-	if [[ $vps = "zvur" ]]; then
-		echo "Hubungi: Yujin Krabs (fb.com/jordhia atau 0877 7547 4442)"
-	else
-		echo "Hubungi: Yujin Krabs (fb.com/jordhia atau 0877 7547 4442)"
-	fi
-	rm -f /root/IP
-	exit
-fi
-
 # disable ipv6
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
