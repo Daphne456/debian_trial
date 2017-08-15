@@ -31,14 +31,6 @@ cd
 
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 
-# check registered ip
-wget -q -O "IP" "$source/OCSP/IP.txt"
-if ! grep -w -q $MYIP IP; then
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
-	echo "Hubungi: Yujin Krabs (fb.com/jordhia atau 0877 7547 4442)"
-	rm -f /root/IP
-	exit
-fi
 
 #https://github.com/adenvt/OcsPanels/wiki/tutor-debian
 
